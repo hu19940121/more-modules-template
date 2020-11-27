@@ -1,5 +1,7 @@
 'use strict'
-const { page } = require('./pages.js')
+const { pages } = require('./pages.json')
+const page = pages[0].name
+
 const path = require('path')
 const defaultSettings = require(`./pages/${page}/settings.js`)
 
